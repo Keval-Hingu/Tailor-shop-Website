@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main-color:#333333;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color:whitesmoke;
+    height: 1500px;
+    background-color: #333333;
+    overflow-x: hidden;
+
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding:10px;
+}
+
+/* When hover on the navbar menu */
+a:hover
+{
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    color:rgb(24, 169, 87) ;
+
+}
+
+/* Setting each li items give margin */
+
+.nav{
+  width: 100vw;
+  height: 80px;
+  position:absolute;
+  top:0px;
+  max-height: 80px;
+  /* border: 2px solid red; */
+}
+
+.navbar
+{
+  max-height :80px;
+  width: 100vw;
+  max-width: 100vw;
+  background-color: #333333;
+  color: whitesmoke;
+  display: flex;
+  position: fixed;
+  top:0px;
+  z-index: 3;
+}
+
+.navitems{
+    margin: 25px 30px;
+    width: 35vw;
+    text-wrap: nowrap;
+}
+
+/* //each li items are inline */
+.navitems li
+{
+    display: inline;
+    margin : 20px 10px;
+}
+
+.mid
+{
+    margin:0 100px;
+    width: 40vw;
+    position:relative;
+    
+
+}
+
+/*  For set Logo Name */
+.shop-name
+{
+    text-wrap: nowrap;
+    max-height: 80px;
+    display: inline;
+    margin: 12px 30px;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 900; 
+    cursor:context-menu;
+}
+
+/* For Register Button */
+
+.register
+{
+    position: absolute;
+    right: 50px;
+    margin: 20px 0px;
+    margin-left: 50px;
+}
+
+.btn-register
+{
+    padding:10px;
+    font-weight: 600;
+}
+
+.shop-image
+{
+    width: 90px;
+}
+
+
+/* MAin front page section */
+
+.main-container
+{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 80px;
+}
+
+/* Background image set for the 95vh */
+.main
+{  
+  border-bottom:  5px solid white;
+  position:relative;
+  top:0px;
+  height:100vh;
+  width:100vw;
+  background: url(../Photos/background/bg-image3.jpg);  
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-top: 0px;
+  z-index: 2;
+   
+  
+}
+
+
+
+
+
+
+
+
+/* Section Accessories */
+
+.services-section {
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .services-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    font-size: xx-large;
+  }
+  
+  @media (max-width: 28.75em) {
+    .services-section-header {
+      font-size: 4rem;
+    }
+  }
+  
+  /* "Automagic" image grid using no media queries */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  
+  @media (max-width: 30.625em) {
+    .services-section {
+      padding: 6rem 1rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .service {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+  
+  .code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+  }
+  
+  .project:hover .code {
+    color: #ff7f50;
+  }
+  
+  .service-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .service-title {
+    font-size: 1rem;
+    padding: 2rem 0.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    height: 10%;
+  }
+  
+  .btn-show-all {
+    font-size: 1.5rem;
+    background: var(--main-gray);
+  }
+  
+  
+  
+  .btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+
+
+
+
+
+
+
+/* Footer */
+
+.main-footer-section
+{
+  background-color:white ;
+  height: 60vh;
+  padding:0 150px ;
+  border-top: 5px solid white;
+  color:black 
+  
+}
+.footer-container{
+  max-width: 1170px;
+  margin-top: 100px;
+}
+.row-container
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* For First address-detail */
+.shop-detail-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-wrap: wrap;
+  width: 25%;
+}
+
+
+.shop-detail-1 p{
+  text-wrap: wrap;
+
+}
+
+.shop-detail-1 h3
+{
+  text-align: center;
+}
+
+/* footer detail-2 (our sevices) */
+.shop-detail-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-wrap: wrap;
+  width: 25%;
+}
+
+.shop-detail-2 ul{
+  list-style: none;
+}
+
+.shop-detail-2 ul li:hover{
+  padding: 0 10px ;  
+  color: green;
+  gap: 1vh;
+}
+
+/* footer detail-3 (sevices details) */
+.shop-detail-3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-wrap: wrap;
+  width: 25%;
+}
+
+.shop-detail-3 ul{
+  list-style: none;
+}
+
+
+/* Shop-Details */
+
+.shop-detail-4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-wrap: wrap;
+  width: 25%;
+}
+
+.shop-detail-4 ul{
+  list-style: none;
+}
+
+
+
+
+

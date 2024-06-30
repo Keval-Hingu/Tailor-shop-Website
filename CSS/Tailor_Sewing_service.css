@@ -1,0 +1,57 @@
+.tailor-service
+{
+    margin:80px 10px 0 90px;
+    padding: 30px 10px;
+}
+
+.service-container
+{
+    margin: 50px 0;
+    display :flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 50px 20px;
+
+}
+.service
+{
+    width: 30%;
+    height: 604px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px 20px;
+    overflow: hidden;
+  
+}
+.service:hover
+{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.service h3
+{
+    text-align: center;
+
+}
+.service-container ul
+{
+    line-height: 2rem;
+    list-style:inside;
+    text-wrap: wrap;
+    
+}
+
+.service img
+{
+    margin-left: 2rem;
+    /* padding-top: 10px ; */
+    width: 80%;
+    
+}
+

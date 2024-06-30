@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./CSS/2_registration_menu.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us |Shivam Tailor </title>
+  <script src="./JS/home.js" defer></script>
+  <link rel="icon" type="image/png" href="./Photos/logo/logo.png">
+  <script defer src="./JS/validate_contact_form.js"></script>
+
+</head>
+
+<body>
+  <!-- Navigation bar  -->
+
+  <head class="nav">
+    <div class="navbar">
+      <div class="shop-image">
+        <img src="./Photos/logo/logo.jpg" alt="Shivam Tailor" width="90px" height="78px">
+      </div>
+      <div class="shop-name">
+        Shivam Tailor
+      </div>
+      <div class="mid">
+        <ul class="navitems">
+          <li><a href="1_home_page.html">Home</a></li>
+          <li><a href="7_services.html">Sevices</a></li>
+          <li><a href="2_Contact_page.html">Contact Us</a></li>
+          <li><a href="4_about-us.html">About US</a></li>
+        </ul>
+      </div>
+      <div class="register">
+        <button class="btn-register" onclick="loginPage()">Log in / sign in</button>
+      </div>
+    </div>
+  </head>
+
+
+  <div class="form">
+
+    <section class="form-container">
+
+      <h1> Contact Us </h1>
+      <p>To get in touch with our amazing customer service team, fill out the form below. Send us a message and we'll be
+        happy to help you out. Let's chat soon!</p>
+      <p>
+        If you are an existing customer, please
+        <a href="5_login_sign_in.html">LOG IN</a> before submitting a request to receive faster service.
+      </p>
+
+      <br>
+      <p>Please Fill out the form for register yourself as a customer :</p>
+
+      <form action="#" method="post" onsubmit="return validateContactForm()">
+
+        <fieldset>
+
+          <label for="fname">Enter Your First Name:
+            <input name="f_name" type="text" id="fname">
+          </label>
+          <br>
+
+          <label for="lname">Enter Your Last Name:
+            <input name="l_name" type="text" id="lname">
+          </label>
+          <br>
+
+          <label for="mail">Enter Your Email:
+            <input type="email" id="mail" name="email">
+          </label>
+          <br>
+
+
+          <label for="mobno">Enter Your Mobile Number :
+            <input type="text" id="mobno" name="mobno" maxlength="10">
+          </label>
+
+          <label for="subject">
+            <br>
+            Enter the Details for contacting us:
+
+          </label>
+          <select name="reason" id="reason">
+            <option value="Formal-Wear-Tailoring">Formal-Wear-Tailoring</option>
+            <option value="Suit-Tailoring">Suit-Tailoring</option>
+            <option value="Repair-Services">Repair-Tailoring</option>
+            <option value="Consultation-Fitting">Consultation-Fitting</option>
+            <option value="Group-services">Group-services</option>
+            <option value="others">Others</option>
+          </select>
+          <br>
+          <br>
+          <textarea name="subject-name" id="subject" cols="70" rows="10"
+            placeholder="Enter Reasons For Contacting"></textarea>
+
+          <br>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Contact Us">
+
+      </form>
+
+
+
+
+    </section>
+
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p>
+        Tailor Store At Surat
+      </p>
+      <p>
+        Mini Bazar
+      </p>
+      <p>
+        VArachchha Road
+      </p>
+      <p>
+        Surat - 365621
+      </p>
+      <p>
+        Gujarat
+      </p>
+
+    </section>
+  </div>
+
+
+  <footer>
+    <div class="main-footer-section">
+      <div class="footer-container">
+        <div class="row-container">
+          <div class="shop-detail-1">
+
+            <img src="./Photos/logo/logo.jpg" alt="Shop-Logo" width="150px">
+
+            <br>
+            <div>
+              <h3>Shivam Tailor </h3>
+            </div>
+            <br>
+            <p>We provide you our best services to Make your clothes as awesone as you are !</p>
+          </div>
+          <div class="shop-detail-2">
+            <h2 style="color: green;">Our Services</h2>
+            <ul>
+              <li onclick="service()">Suit Stitching Services</a></li>
+              <li onclick="service()">Formal stitching Service</li>
+              <li onclick="service()"> Resizing Dresses</li>
+              <li onclick="service()">3 Piece stiching</li>
+            </ul>
+          </div>
+          <div class="shop-detail-3">
+            <h2 style="color: green;">Service Hours</h2>
+            <ul>
+              <li>Monday - Friday : 9 am to 8 pm
+              <li>
+
+                Saturday : 10 am to 4 pm
+              </li>
+              <li>
+                Sunday : Closed
+
+              </li>
+              <li>
+                Support Hours in 24/7 Everyday</li>
+
+              </li>
+            </ul>
+
+          </div>
+          <div class="shop-detail-4">
+            <h2 style="color: green;">Location Details</h2>
+            <ul>
+              <li>
+                Mini Bazar ,
+              </li>
+              <li>Mota-Varachchha Road,</li>
+              <li>Surat-365621</li>
+              <li>Gujarat</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+body{
+    width: 100%;
+    
+    background-color:#333333;
+    color:whitesmoke;
+    margin: 0;
+    font-size: medium;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label
+{
+    display:block;
+    margin: 0.5rem 0;
+}
+
+fieldset
+{
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid ;
+    
+}
+
+h1,p
+{
+    text-align :center;
+}
+
+input
+{
+    width: 100%;
+    margin : 10px 0 0 0;
+
+}
+
+
+form
+{
+    width:60vw;
+    min-width :300px;
+    max-width :500px;
+    margin :0 auto
+    
+}
+
+.inline
+{
+    width:unset;
+}
+
+input
+{
+    background-color:white;
+    border: 1 px solid black;
+    color: black;
+    min-height: 1.5em;
+}
+
+input[type="submit"]
+{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2em;
+    font-size:medium;
+    border-color: black;
+    background-color:white;
+
+}
+
+
+/*for  Form  */
+
+.form
+{
+    padding-top: 80px;
+    margin-bottom: 100px;
+}
+
+/* For making heading interesting: */
+
+.form-container h1
+{
+    margin: 50px 0   ;
+    font-size: xx-large;
+}
+
+.form-container p
+{
+    margin:10px;
+}
+
+.form-container p>a{
+    color:green
+}
+
+/* for contact information */
+
+.contact-info 
+{
+    margin-top: 80px;
+    text-align: center;
+    
+}
+.contact-info p{
+    margin:10px;
+}
+
+
+.contact-info h2{
+    font-size: xx-large;
+
+}

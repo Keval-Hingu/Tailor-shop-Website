@@ -1,0 +1,14 @@
+body
+{
+    height: 100vh;
+}
+
+.thank-you
+{
+    padding: 85px 0;
+    text-align: center;
+
+}
+.thank-you h1{
+    font-size: 70px;
+}
